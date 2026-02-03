@@ -1,14 +1,12 @@
 const params = new URLSearchParams(window.location.search);
 const to = params.get("to");
-const from = params.get("from");
 
-if (to) {
-  document.getElementById("question").textContent =
-    `${to}, will you be my Valentine?`;
-}
+const question = document.getElementById("question");
 
-if (from) {
-  result.textContent = `— ${from}`;
+if (to && to.toLowerCase() !== "you") {
+  question.textContent = `${to}, will you be my Valentine?`;
+} else {
+  question.textContent = "Will you be my Valentine?";
 }
 
 const noBtn = document.getElementById("noBtn");

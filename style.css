@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
   padding: 40px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -50,6 +50,7 @@ button {
   color: white;
   left: 50%;
   transform: translateX(20%);
+  transition: all 0.15s ease;
 }
 
 #result {
